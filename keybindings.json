@@ -1,0 +1,47 @@
+[
+	{
+		"key": "ctrl+l ctrl+enter",
+		"command": "leetcode.submitSolution"
+	},
+	{
+		"key": "ctrl+k ctrl+9",
+		"command": "editor.unfoldAllMarkerRegions",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+9",
+		"command": "-editor.unfoldAllMarkerRegions",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+win+x",
+		"command": "extension.cursorTip",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+win+t",
+		"command": "-extension.cursorTip",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+win+i",
+		"command": "-Tencent-Cloud.coding-copilot.chat.start",
+		"when": "coding-copilot.chat.initialized && coding-copilot.state.authenticated && coding-copilot.state.initialized"
+	},
+	{
+		"key": "ctrl+alt+win+n",
+		"command": "workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "welcome.showNewFileEntries"
+	},
+	{
+		"key": "ctrl+alt+win+n",
+		"command": "-welcome.showNewFileEntries"
+	}
+]
