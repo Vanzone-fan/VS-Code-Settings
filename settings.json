@@ -1,15 +1,16 @@
 /*
+ * cspell:disable
  * @Author: Vanzone-fan fanzong889@gmail.com
  * @Date: 2024-08-08 19:02:02
  * @LastEditors: FanZong fanzong889@gmail.com
- * @LastEditTime: 2024-08-16 19:16:05
+ * @LastEditTime: 2024-08-16 19:34:33
  * @Description: VScode settings
  * ContactByQQ:2329582412
  * ContactByWechat:15535426166
  * Copyright(c) 2024 by GitHub·Vanzone-fan, All Rights Reserved.
  * @symbol_custom_string_obkoro2_copyright: Copyright(c) 2024 by HITwh·范宗, All Rights Reserved.
  */
-// from
+
 {
 	/* ------------------------------------------ 编辑器等界面配置 ----------------------------------------- */
 	"workbench.iconTheme": "a-file-icon-vscode", // 图标
@@ -303,6 +304,7 @@
 	/* ------------------------------------------ maven 配置 ----------------------------------------- */
 	"java.configuration.maven.globalSettings": "E:\\Devtools\\apache-maven-3.6.3\\conf\\settings.xml",
 	"java.configuration.maven.userSettings": "E:\\Devtools\\apache-maven-3.6.3\\conf\\settings.xml",
+	"maven.executable.path": "E:\\Devtools\\apache-maven-3.6.3\\bin\\mvn",
 	/* --------------------------------------- baidu.comate配置 -------------------------------------- */
 	"baidu.comate.username": "范宗99",
 	"baidu.comate.license": "3fe0bd7d-0d9b-48e6-b99d-6edc07074454",
@@ -415,7 +417,5 @@
 	"baidu.comate.linePreferMode": "auto",
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-
+	}
 }
