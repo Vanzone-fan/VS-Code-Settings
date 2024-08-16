@@ -2,7 +2,7 @@
  * @Author: Vanzone-fan fanzong889@gmail.com
  * @Date: 2024-08-08 19:02:02
  * @LastEditors: FanZong fanzong889@gmail.com
- * @LastEditTime: 2024-08-16 18:14:00
+ * @LastEditTime: 2024-08-16 19:16:05
  * @Description: VScode settings
  * ContactByQQ:2329582412
  * ContactByWechat:15535426166
@@ -32,7 +32,7 @@
 			{
 				"scope": ["comment", "keyword", "variable.language"],
 				"settings": {
-					"fontStyle": "italic bold "
+					"fontStyle": "italic"
 				}
 			}
 		]
@@ -43,6 +43,7 @@
 	"editor.formatOnSave": true, // 保存自动格式化
 	"editor.minimap.enabled": false,
 	"editor.wordWrap": "on",
+	"editor.cursorSmoothCaretAnimation": "on",
 	"files.autoSave": "afterDelay", // 文件自动保存
 	"files.autoGuessEncoding": true,
 	"explorer.confirmDelete": false, // 文件删除确认
@@ -302,7 +303,6 @@
 	/* ------------------------------------------ maven 配置 ----------------------------------------- */
 	"java.configuration.maven.globalSettings": "E:\\Devtools\\apache-maven-3.6.3\\conf\\settings.xml",
 	"java.configuration.maven.userSettings": "E:\\Devtools\\apache-maven-3.6.3\\conf\\settings.xml",
-	"maven.executable.path": "E:\\Devtools\\apache-maven-3.6.3\\bin\\mvn",
 	/* --------------------------------------- baidu.comate配置 -------------------------------------- */
 	"baidu.comate.username": "范宗99",
 	"baidu.comate.license": "3fe0bd7d-0d9b-48e6-b99d-6edc07074454",
@@ -415,5 +415,7 @@
 	"baidu.comate.linePreferMode": "auto",
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+
+
 }
