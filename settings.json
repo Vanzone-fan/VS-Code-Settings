@@ -3,7 +3,7 @@
  * @Author: Vanzone-fan fanzong889@gmail.com
  * @Date: 2024-08-08 19:02:02
  * @LastEditors: FanZong fanzong889@gmail.com
- * @LastEditTime: 2024-08-16 19:34:33
+ * @LastEditTime: 2024-09-19 18:47:48
  * @Description: VScode settings
  * ContactByQQ:2329582412
  * ContactByWechat:15535426166
@@ -14,20 +14,17 @@
 {
 	/* ------------------------------------------ 编辑器等界面配置 ----------------------------------------- */
 	"workbench.iconTheme": "a-file-icon-vscode", // 图标
-	"workbench.colorTheme": "GitHub Dark", // 主题
+	"workbench.colorTheme": "Gradient Bearded Theme Arc", // 主题
 	"workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
-	"workbench.startupEditor": "none",
 	"workbench.sideBar.location": "right", // 侧栏位置
 	"workbench.editor.wrapTabs": true, // 标签自动换行
 	"workbench.editor.untitled.labelFormat": "name", // 未命名文件标签名格式
 	"workbench.editor.tabSizing": "shrink", // 标签页缩放
 	"workbench.editor.tabSizingFixedMaxWidth": 150, // 标签页最大宽度
-	"window.autoDetectColorScheme": true,
-	"workbench.preferredDarkColorTheme": "Dracula Theme",
-	"workbench.preferredLightColorTheme": "Brackets Light Pro Bold",
+	"window.autoDetectColorScheme": false,
 	"editor.mouseWheelZoom": true, // 鼠标滚轮缩放
 	"editor.fontLigatures": true, // 符号连笔
-	"editor.fontFamily": "Cascadia Code,Cascadia Code Italic,HarmonyOS Sans SC", //编辑器字体
+	"editor.fontFamily": "Cascadia Code,HarmonyOS Sans SC", //编辑器字体
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			{
@@ -38,31 +35,19 @@
 			}
 		]
 	},
-	"editor.fontSize": 14,
 	"editor.indentSize": "tabSize",
 	"editor.tabSize": 4, // 制表符大小
 	"editor.formatOnSave": true, // 保存自动格式化
-	"editor.minimap.enabled": false,
 	"editor.wordWrap": "on",
 	"editor.cursorSmoothCaretAnimation": "on",
 	"files.autoSave": "afterDelay", // 文件自动保存
 	"files.autoGuessEncoding": true,
-	"explorer.confirmDelete": false, // 文件删除确认
 	"http.proxy": "http://127.0.0.1:7890",
 	"http.proxyStrictSSL": false,
-
+	"npm.packageManager": "pnpm",
 	/* ------------------------------------------ 格式化工具配置 ------------------------------------------ */
 	"editor.defaultFormatter": "esbenp.prettier-vscode", // 代码格式化工具
-	"[xml]": {
-		"editor.defaultFormatter": "DotJoshJohnson.xml"
-	},
-	"[vue]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"prettier.printWidth": 80, // 超过最大值换行 防止前端标签内部换行
+	"prettier.printWidth": 180, // 超过最大值换行 防止前端标签内部换行
 	"prettier.useTabs": true, // 缩进使用tab，不使用空格
 	"prettier.semi": true, // 句尾添加分号
 	"prettier.singleQuote": true, // 使用单引号代替双引号
@@ -79,7 +64,12 @@
 	"php.format.rules.spaceWithinArrayInitilizersParens": true,
 	"php.format.rules.spaceWithinForeachParens": true,
 	"prettier.vueIndentScriptAndStyle": true,
-
+	"cSpell.userWords": ["typeorm"],
+	"sonarlint.rules": {
+		"Web:S1135": {
+			"level": "on"
+		}
+	},
 	/* -------------------------------------------- 插件配置 ------------------------------------------- */
 	// comment-divider 注释分割线插件配置
 	"comment-divider.length": 100,
@@ -162,13 +152,7 @@
 	// leetcode 插件配置
 	"leetcode.workspaceFolder": "e:\\LeetCode\\Code", // LeetCode 代码保存目录
 	"leetcode.defaultLanguage": "javascript", // LeetCode 默认语言
-	"leetcode.editor.shortcuts": [
-		"submit",
-		"test",
-		"star",
-		"solution",
-		"description"
-	], // LeetCode 代码编辑页面附加功能
+	"leetcode.editor.shortcuts": ["submit", "test", "star", "solution", "description"], // LeetCode 代码编辑页面附加功能
 	// console ninja 插件配置
 	"console-ninja.featureSet": "Community",
 	// vscode-drawio 插件配置
@@ -177,6 +161,7 @@
 	/* ------------------------------------- koroFileHeader插件配置 ------------------------------------ */
 	// 头部注释
 	"fileheader.customMade": {
+		"cspell": "",
 		"Author": "git config user.name && git config user.email", // 同时获取用户名与邮箱
 		"Date": "Do not edit", // 文件创建时间(不变)
 		"LastEditors": "git config user.name && git config user.email", // 文件最后编辑者 与Author字段一致
@@ -201,9 +186,7 @@
 		"supportAutoLanguage": [], // 设置之后，在数组内的文件才支持自动添加
 		// 自动添加头部注释黑名单
 		"prohibitAutoAdd": ["json"],
-		"prohibitItemAutoAdd": [
-			"项目的全称禁止项目自动添加头部注释, 使用快捷键自行添加"
-		],
+		"prohibitItemAutoAdd": ["项目的全称禁止项目自动添加头部注释, 使用快捷键自行添加"],
 		"folderBlacklist": ["node_modules"], // 文件夹或文件名禁止自动添加头部注释
 		"wideSame": false, // 头部注释等宽设置
 		"wideNum": 13, // 头部注释字段长度 默认为13
@@ -298,12 +281,9 @@
 		}
 	},
 	"git.useEditorAsCommitInput": false,
-	"terminal.integrated.env.windows": {},
 	"diffEditor.ignoreTrimWhitespace": false,
 	"git.openRepositoryInParentFolders": "never",
 	/* ------------------------------------------ maven 配置 ----------------------------------------- */
-	"java.configuration.maven.globalSettings": "E:\\Devtools\\apache-maven-3.6.3\\conf\\settings.xml",
-	"java.configuration.maven.userSettings": "E:\\Devtools\\apache-maven-3.6.3\\conf\\settings.xml",
 	"maven.executable.path": "E:\\Devtools\\apache-maven-3.6.3\\bin\\mvn",
 	/* --------------------------------------- baidu.comate配置 -------------------------------------- */
 	"baidu.comate.username": "范宗99",
@@ -415,7 +395,5 @@
 	},
 	"baidu.comate.enableSecurityEnhancement": false,
 	"baidu.comate.linePreferMode": "auto",
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	"baidu.comate.privateService": ""
 }
